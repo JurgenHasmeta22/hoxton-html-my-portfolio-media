@@ -47,7 +47,7 @@ section.container-5 .video-group {
     outline: 1px solid #000;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
 
  section.container-5 .video-group {
     display: grid;
@@ -65,16 +65,27 @@ section.container-5 .video-group {
        display: grid;
        grid-template-columns: 1fr;
        place-items: center;
-       grid-gap: 20px;
+       grid-gap: 40px;
        outline: 1px solid #000;
     }
    
 }
 
+@media screen and (max-width: 400px) {
+
+    section.container-5 .video-group {
+        display: grid;
+        grid-template-columns: 300px;
+        place-items: center;
+        grid-gap: 40px;
+        outline: 1px solid #000;
+     }
+   
+}
 
 section.container-5 .video-group video {
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     outline: 1px solid #000;
 }
 
@@ -548,3 +559,4 @@ section.container-4 .title h6 a:hover {
         width: 100vw;
     }
 }
+
