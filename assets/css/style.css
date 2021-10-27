@@ -17,7 +17,7 @@ ul li {
 
 .svg-element {
     height: 200px;
-    width: 400px;
+    width: 300px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
@@ -26,9 +26,9 @@ section.container-1 {
     height: 100vh;
     display: grid;
     grid-template: 
-    "header" auto
-    "main" 4fr 
-    "icon" 0.1fr /
+    "header" 0.1fr
+    "main" 0.9fr
+    "icon" 50px /
     1fr;
     grid-gap: 20px;
     justify-content: center;
@@ -42,8 +42,8 @@ section.container-1 {
     grid-area: main;
     /* outline: 1px solid #000; */
     display: grid;
-    grid-template-columns: 400px  minmax(200px, 600px);
-    grid-gap: 20px;
+    grid-template-columns: 300px  minmax(200px, 600px);
+    grid-gap: 30px;
 }
 
 .container-1 header.header-menu {
@@ -66,7 +66,7 @@ section.container-1 {
     /* position: -webkit-sticky;
 	position: sticky; */
     top: 5px;
-    /* z-index: 1; */
+    z-index: 1;
     position: fixed;
 }
 
@@ -172,9 +172,6 @@ section.container-1 {
     color: #f5cf04;
     transition: 0.5s;
 }
-
-
-
 
 
 
@@ -449,10 +446,24 @@ section.container-4 .title h6 a:hover {
 
   
     section.container-1 main.main-menu .main-menu-content p {
-        font-size: 12px;
+        font-size: 11px;
         /* width: 30ch; */
-        padding-bottom: 0px;
+        /* width: 30ch; */
     }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .svg-container svg {
+        width: 200px;
+        padding-left: 50px;
+    }
+
+    /* main.main-menu {
+        display: grid;
+        grid-template-columns: 100px 2fr 1fr;
+    } */
 
 }
 
@@ -467,15 +478,21 @@ section.container-4 .title h6 a:hover {
     section.container-1 main.main-menu .main-menu-content p {
         font-size: 10px;
         /* width: 20ch; */
-        padding-bottom: 0px;
+        /* padding-bottom: 0px; */
     }
 
-    section.container-2 .cards .card  {
-
+     svg {
+        height: 150px;
+        width: 250px;
     }
 
-    section.container-1 main.main-menu .main-menu-content {
-       
+    /* section.container-2 .cards .card  {
+
+    } */
+
+    section.container-1 main.main-menu  {
+        display: grid;
+       grid-template-columns: 150px auto-fit;
     }
 
     section.container-1 main.main-menu {
@@ -489,15 +506,15 @@ section.container-4 .title h6 a:hover {
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 550px) {
 
-    .container-1 main.main-menu {
-        grid-area: main;
-        display: grid;
-        grid-template-columns: 300px auto-fit;
-        grid-gap: 20px;
+    .container-1 {
+        padding-right: 50px;
     }
 
+    /* .main-menu .header-menu {
+        width: 100%;
+    } */
     .svg-element {
         height: 200px;
         width: 300px;
