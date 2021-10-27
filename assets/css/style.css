@@ -15,7 +15,77 @@ ul li {
     list-style: none;
 }
 
-.svg-element {
+
+section.container-5 {
+    display: grid;
+    grid-gap: 40px;
+}
+
+section.container-5 .emdeded-group {
+    display: grid;
+    grid grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+/* iframe {
+    padding-left: 100px;
+} */
+
+section.container-5 .title {
+    display: grid;
+    place-items: center;
+    padding-top: 50px;
+}
+
+section.container-5 .title h6 {
+    font-size: 22px;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+section.container-5 .video-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    grid-gap: 20px;
+    outline: 1px solid #000;
+}
+
+@media screen and (max-width: 1200px) {
+
+ section.container-5 .video-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    grid-gap: 30px;
+    outline: 1px solid #000;
+ }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    section.container-5 .video-group {
+       display: grid;
+       grid-template-columns: 1fr;
+       place-items: center;
+       grid-gap: 20px;
+       outline: 1px solid #000;
+    }
+   
+}
+
+
+section.container-5 .video-group video {
+    height: 400px;
+    width: 400px;
+    outline: 1px solid #000;
+}
+
+svg {
     height: 200px;
     width: 300px;
 }
@@ -42,8 +112,21 @@ section.container-1 {
     grid-area: main;
     /* outline: 1px solid #000; */
     display: grid;
-    grid-template-columns: 300px  minmax(200px, 600px);
+    grid-template-columns: 300px  minmax(400px, 600px);
     grid-gap: 30px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .container-1 main.main-menu {
+        padding-top: 20px;
+        grid-area: main;
+        /* outline: 1px solid #000; */
+        display: grid;
+        grid-template-columns: 1fr; /*fixed responsives at finally */
+        grid-gap: 30px;
+    }
+
 }
 
 .container-1 header.header-menu {
@@ -410,6 +493,7 @@ section.container-4 .title h6 a:hover {
     bottom: 1rem;
     right: 1rem;
     color: #35382e;
+    z-index: 1;
   }
 
   .back-to-top:hover {
@@ -418,6 +502,9 @@ section.container-4 .title h6 a:hover {
     transition: 1s;
   }
   
+
+
+
 @media screen and (max-width: 600px) {
     .back-to-top {
       bottom: 0;
@@ -429,7 +516,7 @@ section.container-4 .title h6 a:hover {
   
     section.container-2 .cards {
         grid-template-columns: 1fr 1fr;
-    }
+    }  
 }
 
 @media screen and (max-width: 700px) {
@@ -440,85 +527,31 @@ section.container-4 .title h6 a:hover {
     }
 
     .container-1 header.header-menu {
-        grid-template-columns: auto 1fr;
-        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
     }
 
   
     section.container-1 main.main-menu .main-menu-content p {
         font-size: 11px;
-        /* width: 30ch; */
-        /* width: 30ch; */
     }
 
 }
 
-@media screen and (max-width: 700px) {
-
-    .svg-container svg {
-        width: 200px;
-        padding-left: 50px;
-    }
-
-    /* main.main-menu {
-        display: grid;
-        grid-template-columns: 100px 2fr 1fr;
-    } */
-
-}
 
 @media screen and (max-width: 400px) {
 
     .container-1 header.header-menu {
-        grid-template-columns: auto 1fr;
-        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 60px;
         width: 100vw;
     }
 
     section.container-1 main.main-menu .main-menu-content p {
         font-size: 10px;
-        /* width: 20ch; */
-        /* padding-bottom: 0px; */
-    }
-
-     svg {
-        height: 150px;
-        width: 250px;
-    }
-
-    /* section.container-2 .cards .card  {
-
-    } */
-
-    section.container-1 main.main-menu  {
-        display: grid;
-       grid-template-columns: 150px auto-fit;
-    }
-
-    section.container-1 main.main-menu {
-        padding-top: 30px;
     }
 
     section.container-2 .cards .card {
-        /* padding-left: 40px; */
         width: 100vw;
     }
-
-}
-
-@media screen and (max-width: 550px) {
-
-    .container-1 {
-        padding-right: 50px;
-    }
-
-    /* .main-menu .header-menu {
-        width: 100%;
-    } */
-    .svg-element {
-        height: 200px;
-        width: 300px;
-        padding-left: 30px;
-    }
-    
 }
