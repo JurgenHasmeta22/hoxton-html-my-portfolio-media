@@ -23,16 +23,9 @@ section.container-5 {
 
 section.container-5 .emdeded-group {
     display: grid;
-    grid grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
 }
-
-/* iframe {
-    padding-left: 100px;
-} */
 
 section.container-5 .title {
     display: grid;
