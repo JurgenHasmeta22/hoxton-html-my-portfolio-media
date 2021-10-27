@@ -176,7 +176,7 @@ section.container-2 {
     place-items: center;
     align-content: start; 
     justify-content: center;
-    grid-gap: 25px;
+    grid-gap: 15px;
     /* height: 100vh; */
 }
 
@@ -185,25 +185,37 @@ section.container-2 .cards {
     outline: 1px solid #000;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 15px;
     padding-top: 10px;
     place-items: center;
     padding-bottom: 10px;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 section.container-2 .cards .card {
     border: 1px solid #000;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr auto-fit;
      /*  width: 45ch; ketu ishte bug */
     /* padding: 20px 10px; */
-    grid-gap: 10px;
+    grid-gap: 20px;
     align-content: center;
-    padding: 15px 10px;
+    padding: 10px 10px;
     background-color: #f7f4f3;
-    border-radius: 20px;
+    border-radius: 30px;
+    height: auto;
+    width: auto;
+}
+
+section.container-2 .cards .card img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+    height: 200px;
+    width: 100%;
 }
 
 section.container-2 .cards .card button {
@@ -240,6 +252,8 @@ section.container-2 .title h3 {
    font-size: 20px;
    font-weight: 700;
    color: #35382e;
+   margin-top: 30px;
+   padding-bottom: 20px;
 }
 
 section.container-2 .cards .card h4 {
@@ -247,7 +261,6 @@ section.container-2 .cards .card h4 {
     font-size: 18px;
     font-weight: 700;
     font-family: sans-serif;
-    padding-top: 10px;
 }
 
 section.container-2 .cards .card p {
